@@ -1,50 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css" />
 
-    <!-- Iconscout -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <title>RegEasy</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>RegEasy</header>
+      <header>RegEasy</header>
 
-        <form action="#">
-            <div class="form first">
-                <div class="details personal">
-                    <span class="title">Personal Details</span>
-    
-                    <div class="fields">
-                        <div class="input-fields">
-                            <label for="full-name">Full Name</label>
-                            <input type="text" placeholder="Enter your name" name="full-name" id="full-name" required>
-                        </div>
-                        <div class="input-fields">
-                            <label for="dob">Date of Birth</label>
-                            <input type="date" placeholder="Enter your birth date" name="dob" id="dob" required>
-                        </div>
-                        <div class="input-fields">
-                            <label for="email">Email</label>
-                            <input type="email" placeholder="Enter your name" name="email" id="email" required>
-                        </div>
-                        
+      <form action="#">
+        <div class="form first">
+          <div class="details personal">
+            <span class="title">Personal Details</span>
 
+            <div class="fields">
+              <div class="input-fields">
+                <label for="full-name">Full Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  name="full-name"
+                  id="full-name"
+                  required
+                />
+              </div>
 
+              <div class="input-fields">
+                <label for="dob">Date of Birth</label>
+                <input
+                  type="date"
+                  placeholder="Enter your birth date"
+                  name="dob"
+                  id="dob"
+                  required
+                />
+              </div>
 
-                    </div>
-                </div>
+              <div class="input-fields">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter your name"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+
+              <div class="input-fields">
+                <label for="phone">Mobile Number</label>
+                <input
+                  type="text"
+                  placeholder="Enter mobile number"
+                  name="phone"
+                  id="phone"
+                  required
+                />
+              </div>
+
+              <div class="input-fields">
+                <label for="gender">Gender</label>
+                <input
+                  type="text"
+                  placeholder="Enter your gender"
+                  name="gender"
+                  id="gender"
+                  required
+                />
+              </div>
+
+              <div class="input-fields">
+                <label for="major">Major</label>
+                <input
+                  type="text"
+                  placeholder="Enter your major"
+                  name="major"
+                  id="major"
+                  required
+                />
+              </div>
             </div>
-        </form>
+          </div>
 
+          <div class="details id">
+            <span class="title">Identity Details</span>
+
+            <div class="fields">
+              <div class="input-fields">
+                <label for="id-type">ID Type</label>
+                <input
+                  type="text"
+                  placeholder="Enter ID type"
+                  name="id-type"
+                  id="id-type"
+                  required
+                />
+              </div>
+
+              <div class="input-fields">
+                <label for="id-num">ID Number</label>
+                <input
+                  type="text"
+                  placeholder="Enter your ID number"
+                  name="id-num"
+                  id="id-num"
+                  required
+                />
+              </div>
+
+              <div class="input-fields">
+                <label for="id-ver">ID Version</label>
+                <input
+                  type="text"
+                  placeholder="Enter your ID version"
+                  name="id-ver"
+                  id="id-ver"
+                  required
+                />
+              </div>
+
+              <div class="input-fields">
+                <label for="issued">Issued Date</label>
+                <input
+                  type="date"
+                  placeholder="Enter issued date"
+                  name="issued"
+                  id="issued"
+                  required
+                />
+              </div>
+
+              <div class="input-fields">
+                <label for="expiry">Expiry Date</label>
+                <input
+                  type="date"
+                  placeholder="Enter expiry date"
+                  name="expiry"
+                  id="expiry"
+                  required
+                />
+              </div>
+
+              <div class="input-fields">
+                <label for="state">ID State</label>
+                <input
+                  type="text"
+                  placeholder="Enter your ID state"
+                  name="state"
+                  id="state"
+                  required
+                />
+              </div>
+            </div>
+
+            <button class="nextBtn">
+              <span class="btnText">Next</span>
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
 
-    
-</body>
+    <script>
+        feather.replace()
+    </script>
+  </body>
 </html>

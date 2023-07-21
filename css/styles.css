@@ -55,6 +55,10 @@ body {
   margin-top: 30px;
 }
 
+.container form .details.id {
+  margin-top: 30px;
+}
+
 .container form .title {
   display: block;
   margin-bottom: 8px;
@@ -68,6 +72,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 form .fields .input-fields {
@@ -84,6 +89,44 @@ form .fields .input-fields {
 }
 
 .input-fields input {
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 15px;
   height: 42px;
   margin: 8px 0;
+}
+
+.input-fields input:hover,
+.input-fields input:is(:focus, :valid) {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+  transition: ease 0.3s;
+}
+
+.input-fields input[type="date"] {
+  color: #333;
+}
+
+.container form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #f8f8f8;
+  border-radius: 5px;
+  margin: 25px 0;
+  background-color: #4070f4;
+}
+
+form button:hover {
+    background-color: #265df2;
+    transition: ease 0.3s;
+    cursor: pointer;
 }
