@@ -1,3 +1,3 @@
-# Registration Form
+# RegEasy
 
-CSS and JavaScript Practice
+CSS and JavaScript Registration Form Practice
