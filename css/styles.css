@@ -28,7 +28,7 @@ body {
 
 .container header {
   position: relative;
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 600;
   color: #333;
 }
@@ -53,27 +53,27 @@ body {
 }
 
 .container form .form {
-    position: absolute;
-    background-color: #f8f8f8;
-    transition: ease 0.3s;
+  position: absolute;
+  background-color: #f8f8f8;
+  transition: ease 0.3s;
 }
 
 .container form .form.second {
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
 }
 
 form.secActive .form.second {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
 }
 
 form.secActive .form.first {
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-100%);
 }
 
 .container form .title {
@@ -145,22 +145,42 @@ form .fields .input-fields {
 
 .container form button,
 .container form .backBtn {
-    font-size: 16px;
-    font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 form button:hover {
-    background-color: #265df2;
-    transition: ease 0.3s;
-    cursor: pointer;
+  background-color: #265df2;
+  transition: ease 0.3s;
+  cursor: pointer;
 }
 
 form .buttons {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 form .buttons button,
 .backBtn {
-    margin-right: 14px;
+  margin-right: 14px;
+}
+
+@media (max-width: 750px) {
+  .container form {
+    overflow-y: scroll;
+  }
+
+  .container form::-webkit-scrollbar {
+    display: none;
+  }
+
+  form .fields .input-fields {
+    width: calc(100% / 2 - 15px);
+  }
+}
+
+@media (max-width: 550px) {
+  form .fields .input-fields {
+    width: 100%;
+  }
 }
