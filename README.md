@@ -1,1 +1,3 @@
-# Responsive Registration Form
+# Registration Form
+
+CSS and JavaScript Practice
