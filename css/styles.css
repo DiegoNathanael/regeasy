@@ -49,16 +49,31 @@ body {
   margin-top: 16px;
   min-height: 490px;
   background-color: #f8f8f8;
+  overflow: hidden;
 }
 
 .container form .form {
     position: absolute;
     background-color: #f8f8f8;
+    transition: ease 0.3s;
 }
 
 .container form .form.second {
     opacity: 0;
     pointer-events: none;
+    transform: translateX(100%);
+}
+
+form.secActive .form.second {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+form.secActive .form.first {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
 }
 
 .container form .title {

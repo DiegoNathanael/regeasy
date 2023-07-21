@@ -10,7 +10,8 @@ nextBtn.addEventListener("click", ()=> {
         }
         else {
             form.classList.remove('secActive');
-            alert("Input is empty")
         }
     })
 })
+
+backBtn.addEventListener("click",() => form.classList.remove('secActive'));
