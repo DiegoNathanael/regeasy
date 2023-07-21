@@ -110,7 +110,8 @@ form .fields .input-fields {
   color: #333;
 }
 
-.container form button {
+.container form button,
+.backBtn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,8 +126,24 @@ form .fields .input-fields {
   background-color: #4070f4;
 }
 
+.container form button,
+.container form .backBtn {
+    font-size: 16px;
+    font-weight: 400;
+}
+
 form button:hover {
     background-color: #265df2;
     transition: ease 0.3s;
     cursor: pointer;
+}
+
+form .buttons {
+    display: flex;
+    align-items: center;
+}
+
+form .buttons button,
+.backBtn {
+    margin-right: 14px;
 }

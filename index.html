@@ -19,8 +19,7 @@
       <form action="#">
         <!-- First Form -->
         <div class="form first">
-
-            <!-- Personal Details -->
+          <!-- Personal Details -->
           <div class="details personal">
             <span class="title">Personal Details</span>
 
@@ -81,19 +80,19 @@
               </div>
 
               <div class="input-fields">
-                <label for="major">Major</label>
+                <label for="occupation">Occupation</label>
                 <input
                   type="text"
-                  placeholder="Enter your major"
-                  name="major"
-                  id="major"
+                  placeholder="Enter your occupation"
+                  name="occupation"
+                  id="occupation"
                   required
                 />
               </div>
             </div>
           </div>
 
-            <!-- ID Details -->
+          <!-- ID Details -->
           <div class="details id">
             <span class="title">Identity Details</span>
 
@@ -170,11 +169,10 @@
             </button>
           </div>
         </div>
-        
+
         <!-- Second Form -->
         <div class="form second">
-
-            <!-- Address Details -->
+          <!-- Address Details -->
           <div class="details address">
             <span class="title">Address Details</span>
 
@@ -247,89 +245,94 @@
             </div>
           </div>
 
-            <!-- ID Details -->
-          <div class="details id">
-            <span class="title">Identity Details</span>
+          <!-- Family Details -->
+          <div class="details family">
+            <span class="title">Family Details</span>
 
             <div class="fields">
               <div class="input-fields">
-                <label for="id-type">ID Type</label>
+                <label for="father">Father Name</label>
                 <input
                   type="text"
-                  placeholder="Enter ID type"
-                  name="id-type"
-                  id="id-type"
+                  placeholder="Enter father name"
+                  name="father"
+                  id="father"
                   required
                 />
               </div>
 
               <div class="input-fields">
-                <label for="id-num">ID Number</label>
+                <label for="mother">Mother Name</label>
                 <input
                   type="text"
-                  placeholder="Enter your ID number"
-                  name="id-num"
-                  id="id-num"
+                  placeholder="Enter mother name"
+                  name="mother"
+                  id="mother"
                   required
                 />
               </div>
 
               <div class="input-fields">
-                <label for="id-ver">ID Version</label>
+                <label for="spouse">Spouse Name</label>
                 <input
                   type="text"
-                  placeholder="Enter your ID version"
-                  name="id-ver"
-                  id="id-ver"
+                  placeholder="Enter spouse name"
+                  name="spouse"
+                  id="spouse"
                   required
                 />
               </div>
 
               <div class="input-fields">
-                <label for="issued">Issued Date</label>
+                <label for="sibling">Sibling</label>
                 <input
-                  type="date"
-                  placeholder="Enter issued date"
-                  name="issued"
-                  id="issued"
+                  type="number"
+                  placeholder="Enter sibling amount"
+                  name="sibling"
+                  id="sibling"
                   required
                 />
               </div>
 
               <div class="input-fields">
-                <label for="expiry">Expiry Date</label>
+                <label for="child">Child</label>
                 <input
-                  type="date"
-                  placeholder="Enter expiry date"
-                  name="expiry"
-                  id="expiry"
+                  type="number"
+                  placeholder="Enter child amount"
+                  name="child"
+                  id="child"
                   required
                 />
               </div>
 
               <div class="input-fields">
-                <label for="state">ID State</label>
+                <label for="status">Status</label>
                 <input
                   type="text"
-                  placeholder="Enter your ID state"
-                  name="state"
-                  id="state"
+                  placeholder="Enter family status"
+                  name="status"
+                  id="status"
                   required
                 />
               </div>
             </div>
 
-            <button class="nextBtn">
-              <span class="btnText">Next</span>
-            </button>
+            <div class="buttons">
+              <div class="backBtn">
+                <span class="btnText">Back</span>
+              </div>
+
+              <button class="nextBtn">
+                <span class="btnText">Next</span>
+              </button>
+            </div>
           </div>
         </div>
-
       </form>
     </div>
 
     <script>
-        feather.replace()
+      feather.replace();
     </script>
   </body>
 </html>
